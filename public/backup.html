@@ -95,7 +95,7 @@ display: none !important;
         <tr style="padding-left: 15px">
 
           <td  style="text-align: center; padding: 15px"> <br><br><br><b>Task oriented</b> - Completed the allotted work promptly</td>
-          <td class="preference" style="padding-left: 220px">
+          <td class="preference" style="padding-left: 20%">
             <input type="radio" name="q1" ng-model="emp.q1" value="1"> 1. Very Bad <p></p>
             <input type="radio" name="q1" ng-model="emp.q1" value="2"> 2. Bad <p></p>
             <input type="radio" name="q1" ng-model="emp.q1" value="3"> 3. Neutral <p></p>
@@ -105,7 +105,7 @@ display: none !important;
         </tr>
         <tr>   
           <td style="text-align: center; padding: 15px">  <br><br><br> <b>Active Learner</b> - Constanly upskilling and eager to learn</td>
-          <td class="preference" style="padding-left: 220px">
+          <td class="preference" style="padding-left: 20%">
             <input type="radio" name="q2" ng-model="emp.q2" value="1"> 1. Very Bad <p></p>
             <input type="radio" name="q2" ng-model="emp.q2" value="2"> 2. Bad <p></p>
             <input type="radio" name="q2" ng-model="emp.q2" value="3"> 3. Neutral <p></p>
@@ -115,7 +115,7 @@ display: none !important;
         </tr>
         <tr>
           <td style="text-align: center; padding: 15px"> <br><br><br><b>Work Quality</b> - His/her meets industry standards and protocol</td>
-          <td class="preference" style="padding-left: 220px">
+          <td class="preference" style="padding-left: 20%">
             <input type="radio" name="q3" ng-model="emp.q3" value="1"> 1. Very Bad <p></p>
             <input type="radio" name="q3" ng-model="emp.q3" value="2"> 2. Bad <p></p>
             <input type="radio" name="q3" ng-model="emp.q3" value="3"> 3. Neutral <p></p>
@@ -142,7 +142,7 @@ display: none !important;
         
         <tr>
           <td style="text-align: center; padding: 15px"> <br><br><br><b>Team Player</b> - Ensures that he/she is committed to work in the team</td>
-          <td class="preference" style="padding-left: 220px">
+          <td class="preference" style="padding-left: 20%">
             <input type="radio" name="q4" ng-model="emp.q4" value="1"> 1. Very Bad <p></p>
             <input type="radio" name="q4" ng-model="emp.q4" value="2"> 2. Bad <p></p>
             <input type="radio" name="q4" ng-model="emp.q4" value="3"> 3. Neutral <p></p>
@@ -152,7 +152,7 @@ display: none !important;
         </tr>
         <tr>   
           <td style="text-align: center; padding: 15px"> <br><br><br><b>Progress minded</b> - Takes up inititative and encourages new ideas</td>
-          <td class="preference" style="padding-left: 220px">
+          <td class="preference" style="padding-left: 20%">
             <input type="radio" name="q5" ng-model="emp.q5" value="1"> 1. Very Bad <p></p>
             <input type="radio" name="q5" ng-model="emp.q5" value="2"> 2. Bad <p></p>
             <input type="radio" name="q5" ng-model="emp.q5" value="3"> 3. Neutral <p></p>
@@ -163,7 +163,7 @@ display: none !important;
 
         <tr>
           <td style="text-align: center; padding: 15px" > <br><br><br><b>Maturity</b> - Responds appropriately to feedback and criticism</b></td>
-          <td class="preference" style="padding-left: 220px">
+          <td class="preference" style="padding-left: 20%">
             <input type="radio" name="q7" ng-model="emp.q7" value="1"> 1. Very Bad  <p></p>
             <input type="radio" name="q7" ng-model="emp.q7" value="2"> 2. Bad <p></p>
             <input type="radio" name="q7" ng-model="emp.q7" value="3"> 3. Neutral <p></p>
@@ -191,7 +191,7 @@ display: none !important;
         
         <tr>
           <td style="text-align: center;"> <br><br><br><b>Overall Performance</b></td>
-          <td class="preference" style="padding-left: 220px">
+          <td class="preference" style="padding-left: 20%">
             <input type="radio" name="q6" ng-model="emp.q6" value="1"> 1. Very Bad  <p></p>
             <input type="radio" name="q6" ng-model="emp.q6" value="2"> 2. Bad <p></p>
             <input type="radio" name="q6" ng-model="emp.q6" value="3"> 3. Neutral <p></p>
@@ -240,7 +240,6 @@ display: none !important;
         <tr>
           <th>Name</th>
           <th>Employee Id</th>
-          <th>Department</th>
           <th>&nbsp;</th>
         </tr>
       </thead>
@@ -249,7 +248,6 @@ display: none !important;
         <tr>
           <td>{{emp.name}}</td>
           <td>{{emp.emp_id}}</td>
-          <td>{{emp.department}}</td>
         </tr>
       </tbody>
     </table>
@@ -365,7 +363,6 @@ display: none !important;
         <tr>
           <th>Name</th>
           <th>Employee Id</th>
-          <th>Department</th>
           <th>&nbsp;</th>
         </tr>
       </thead>
@@ -373,7 +370,6 @@ display: none !important;
         <tr ng-repeat="emp in emps | filter:{ emp_id: searchinput}">
           <td>{{emp.name}}</td>
           <td>{{emp.emp_id}}</td>
-          <td>{{emp.department}}</td>
           <td>
             <button class="btn btn-primary" ng-click="view(emp._id)" >View</button>
             

@@ -30,8 +30,40 @@ display: none !important;
   </header>
   
 
-  <div >
-  <div class="container main-form" ng-controller="EmpCtrl">
+  	
+    <div class="container" ng-controller="EmpCtrl">
+
+    <div class="col-md-3 center-block main-form" style="text-align: center;" ng-show="!isValidated">
+      <div style="background-color: #ffffff; border-radius: 25px; padding:20px;"><br>
+      <div class=" w3l-login-form" style="display: inline-block;">
+        <h2>LOGIN</h2><br>
+        <form name="loginForm">
+            <div class=" w3l-form-group">
+                <label>Manager Id:</label>
+                <div class="group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" class="form-control " name="manager_id" placeholder="Manager Id" ng-model = "user.man_id" required="required" />
+                </div>
+            </div>
+        	<br>
+            <div class=" w3l-form-group">
+                <label>Password:</label>
+                <div class="group">
+                    <i class="fas fa-unlock"></i>
+                    <input type="password" class="form-control" name="pwd" placeholder="Password" ng-model="user.pwd" required="required" />
+                </div>
+            </div><br>
+            <button class="btn btn-primary" type="submit" name="login-submit" ng-show="login" ng-click="Validate()">LOGIN</button>
+            <button type="submit" name="login-submit" ng-show="!login" ng-click="AddUser()">SignUp</button>
+        </form>
+        <p class=" w3l-register-p" ng-show="login">Not registered? <a href="#" class="register"  ng-click="signup()"> Sign up</a></p>
+        <p class=" w3l-register-p" ng-show="!login">Already have an account?<a href="#" class="register"  ng-click="log()">Login</a></p>
+    </div>
+</div>
+    </div>
+
+
+    <div ng-show="isValidated" class="col-md-14 main-form" style="padding-left: 10px;padding-right: 10px;">
 
     <br>
     <!--Fill form Part-->
@@ -255,13 +287,11 @@ display: none !important;
     <table class="table">
       <thead>
         <tr>
-          <th>Manager Name</th>
           <th>Manager ID</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>{{emp.mname}}</td>
           <td>{{emp.man_id}}</td>
         </tr>
       </tbody>

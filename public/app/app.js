@@ -52,7 +52,6 @@ app.factory('Emp', function($resource) {
   });
 });
 
-
 // Create a resource factory to access user table from database 
 app.factory('User', function($resource) {
   return $resource('/api/user/:id', { id: '@_id' }, {
