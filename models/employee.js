@@ -1,4 +1,6 @@
 // Dependencies
+
+// Restful model so that it can listen to rest API calls
 var restful = require('node-restful');
 var mongoose = restful.mongoose;
 
