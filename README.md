@@ -33,6 +33,8 @@ Created as part of Web Technologies and Applications( WTA ) - IT 254 course
 
 ## Available features:
 
+1. Authentication system to validate the Manager using ID and password.
+
 1. Manager can create and fill a new form for an employee.
 
 2. Manager can read/view all the forms currently filled.
