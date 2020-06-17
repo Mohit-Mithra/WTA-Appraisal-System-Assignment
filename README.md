@@ -6,9 +6,12 @@
 
 2. Clone the repo.
 
-3. Go to the root folder of the project and run npm install.
-
-4. Run npm start.
+3. Go to the root folder of the project and run the following in the terminal:
+    ```shell
+    npm install
+    
+    npm start
+    ```
 
 5. In the browser, enter localhost:8080.
 
