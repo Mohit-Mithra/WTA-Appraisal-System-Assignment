@@ -17,19 +17,6 @@ Created as part of Web Technologies and Applications( WTA ) - IT 254 course
 
 5. In the browser, enter localhost:8080.
 
-
-## Available features:
-
-1. Manager can create and fill a new form for an employee.
-
-2. Manager can read/view all the forms currently filled.
-
-3. Manager can search for a particular employee's filled form by id.
-
-4. Update/Edit or delete any filled form.
-
-5. View any form filled and download a pdf copy of it locally. 
-
 ## Checklist 
 
 - [x] Single Page Application
@@ -43,3 +30,17 @@ Created as part of Web Technologies and Applications( WTA ) - IT 254 course
 - [x] Built on an MVC architecture
 
 - [x] Responsive application
+
+## Available features:
+
+1. Manager can create and fill a new form for an employee.
+
+2. Manager can read/view all the forms currently filled.
+
+3. Manager can search for a particular employee's filled form by id.
+
+4. Update/Edit or delete any filled form.
+
+5. View any form filled and download a pdf copy of it locally. 
+
+
